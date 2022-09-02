@@ -43,3 +43,12 @@ ol {
   margin: 0;
   list-style: none;
 }
+
+.appDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  color: black;
+}

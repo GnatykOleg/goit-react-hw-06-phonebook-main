@@ -1,7 +1,10 @@
+import { useDispatch } from 'react-redux';
+import { deleteContacts } from 'redux/contacts/contacts-actions';
 import PropTypes from 'prop-types';
 import s from './Contacts.module.css';
 
-export default function Contacts({ data, deleteContact }) {
+export default function Contacts({ data }) {
+  const dispatch = useDispatch();
   return (
     <ul className={s.list}>
       <h3 className={s.listTitle}>Total contacts: {data.length}</h3>
@@ -13,7 +16,7 @@ export default function Contacts({ data, deleteContact }) {
             <button
               className={s.btn}
               type="submit"
-              onClick={() => deleteContact(id)}
+              onClick={() => dispatch(deleteContacts(id))}
             >
               Delete
             </button>
@@ -32,5 +35,4 @@ Contacts.propTypes = {
       number: PropTypes.string.isRequired,
     })
   ),
-  onDeleteContact: PropTypes.func,
 };

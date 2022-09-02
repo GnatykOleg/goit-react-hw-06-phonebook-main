@@ -6,8 +6,12 @@
 
 .labelFilter {
   color: #000;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
 }
 
 .filterInput {
-  margin-left: 20px;
+  margin-top: 10px;
 }

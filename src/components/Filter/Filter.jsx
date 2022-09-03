@@ -3,7 +3,7 @@ import { setFilter } from 'redux/contacts/contacts-actions';
 import s from './Filter.module.css';
 
 export default function Filter() {
-  const value = useSelector(state => state.contacts.filter);
+  const value = useSelector(state => state.phoneBook.filter);
 
   const dispatch = useDispatch();
   return (

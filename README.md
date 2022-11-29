@@ -6,6 +6,6 @@
 
 `{ contacts: [], filter: "" } `
 
-#### Созданы действия сохранения и удаления контакта, а также обновления фильтра.
+#### Created actions to save and delete a contact, as well as update the filter.
 
 #### Created actions for saving and deleting a contact, as well as updating a filter. Using the createAction() function. Created contact and filter reducers. used createReducer() function. Associated React Components with Redux logic with hooks from the react-redux library.
